@@ -1,7 +1,7 @@
 import React from "react";
 import "./Track.css";
 
-export class Track extends React.Component {
+class Track extends React.Component {
   renderAction() {
     let isRemoval = true;
     return <button className="Track-action">{isRemoval ? "-" : "+"}</button>;
@@ -23,3 +23,5 @@ export class Track extends React.Component {
     );
   }
 }
+
+export default Track;
